@@ -1,0 +1,20 @@
+﻿@model List<_200394746_Class_Simplepro.Models.Car>
+@{
+    ViewBag.Title = "Car list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Car List</h2>
+
+<h2>Car List</h2>
+@foreach (var car in Model)
+{
+    <tr>
+        <td> @car.Id</td>
+        <td>@car.Brand</td>
+        <td> @car.Model</td>
+        <td>@car.Type</td>
+        <td> @car.Year</td>
+    </tr>
+}
+
